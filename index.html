@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+<header id="header" class="js_header">
+    <svg class="logo" viewBox="0 0 256 256" preserveAspectRatio="xMidYMid meet"><path d="M64 180.3v-104.6h21.9c7 0 12.7.6 17.2 1.9 4.5 1.3 8.1 3.3 10.6 6.2 2.6 2.9 4.4 6.3 5.3 10.4s1.5 9.2 1.5 15.4v34.3c0 3.7-.1 7-.3 9.7-.2 2.8-.7 5.5-1.3 8.1s-1.5 4.9-2.6 6.7c-1.1 1.8-2.5 3.6-4.3 5.1-1.7 1.6-3.8 2.8-6.3 3.8-2.5.9-5.3 1.6-8.7 2.2-3.3.5-7.1.8-11.4.8h-21.6zm22-14.8c2 0 3.6 0 4.8-.1 1.2-.1 2.3-.2 3.5-.4s2-.6 2.6-1c.5-.4 1-1 1.5-1.8s.8-1.7.9-2.8c.1-1.1.2-2.4.2-4v-56.2c0-3.4-1-5.7-3.1-6.9-2.1-1.1-5.5-1.7-10.3-1.7v74.9zM130.3 147.6v-36.9c0-24.7 10.3-37.1 30.9-37.1 4.3 0 8.2.6 11.6 1.7s6.2 2.7 8.5 4.7 4.2 4.5 5.6 7.4c1.5 2.9 2.5 6.1 3.2 9.6.7 3.4 1 7.2 1 11.4v6.2h-20.2v-7.3c0-1.8 0-3.4-.1-4.8s-.3-2.9-.7-4.6c-.4-1.7-.9-3.1-1.6-4.2-.7-1.1-1.6-2-2.8-2.7-1.2-.7-2.7-1.1-4.4-1.1-6.5 0-9.7 5.2-9.7 15.5v45.2c0 10.3 3.2 15.4 9.7 15.4 6.4 0 9.6-5.3 9.6-16v-8.4h-12v-15.2h33.1v53.8h-14.5l-2.7-7.3c-1.8 2.8-4.3 5-7.6 6.8-3.3 1.7-6.7 2.6-10.2 2.6-3.8 0-7.2-.7-10.3-2.1-3.1-1.4-5.6-3.2-7.6-5.5s-3.7-4.9-5-8c-1.4-3.1-2.3-6.2-2.9-9.4-.6-3.1-.9-6.3-.9-9.7zM88.4 61.8l-11.4-23.8 5-2.4c1.6-.8 3-1.2 4.1-1.5 1.2-.2 2.2-.1 3.1.2s1.7 1 2.3 1.8c.7.8 1.3 1.9 2 3.3l3.8 7.8c.4.8.7 1.6 1 2.2.3.7.4 1.3.6 2 .1.7.2 1.3.1 1.8s-.2 1.1-.4 1.6c-.2.6-.6 1.1-1 1.5s-1 1-1.7 1.4c-.7.5-1.5 1-2.5 1.4l-5 2.7zm3.4-5.8l1.1-.5c.3-.1.5-.3.7-.5.2-.2.4-.3.5-.5.1-.2.1-.3.1-.6 0-.2 0-.5-.1-.7-.1-.3-.2-.6-.4-.9l-6.2-12.8c-.4-.8-.9-1.2-1.4-1.2-.6 0-1.4.2-2.5.7l8.2 17zM102.7 55l-.4-27 4.6-1.1 11.5 24.4-5.1 1.2-2.3-5.2-3.4.8.3 5.7-5.2 1.2zm4.4-10.2l2.7-.6-3.5-9.2.8 9.8zM120.3 51.3l-.4-26.4 3.8-.1 6 13.7-.2-13.8 4.4-.1.4 26.4-3.7.1-6-14.5.2 14.6-4.5.1zM138.1 51.8l4.3-26 5.3.9-4.3 26-5.3-.9zM147.4 53.5l8.2-25 10.5 3.4-1.1 3.5-5.4-1.8-2.2 6.8 3.8 1.3-1.2 3.6-3.8-1.3-2.5 7.7 5.4 1.8-1.1 3.5-10.6-3.5zM160.2 58.1l12.5-23.2 4.7 2.5-10.7 20 4.6 2.5-1.7 3.2-9.4-5zM80.7 210.7l3.9-8.4c2.6-5.6 6.3-7.4 11-5.2 1 .5 1.8 1 2.5 1.6s1.1 1.3 1.4 2c.3.7.5 1.5.5 2.3 0 .8-.1 1.7-.3 2.5-.2.9-.5 1.8-1 2.7l-.7 1.4-4.6-2.2.8-1.7c.2-.4.4-.8.5-1.1.1-.3.2-.7.3-1.1.1-.4.1-.8.1-1.1 0-.3-.2-.6-.4-.9-.2-.3-.5-.5-.9-.7-1.5-.7-2.8.1-3.9 2.5l-4.8 10.3c-1.1 2.3-.9 3.9.6 4.6 1.5.7 2.8-.2 3.9-2.6l.9-1.9-2.7-1.3 1.6-3.5 7.6 3.5-5.7 12.3-3.3-1.6.2-2c-.7.4-1.5.7-2.5.7-.9 0-1.8-.1-2.6-.5-.9-.4-1.6-.9-2.1-1.6s-.9-1.3-1.2-2.1c-.2-.7-.3-1.5-.3-2.4s.1-1.7.3-2.5c.3-.4.6-1.2.9-2zM101.4 219l1.8-8.7c1.3-6.1 4.4-8.6 9.4-7.6s6.9 4.6 5.7 10.7l-1.8 8.6c-.2 1-.5 2-.8 2.8s-.8 1.6-1.3 2.3c-.5.7-1.1 1.3-1.8 1.7s-1.5.7-2.4.9c-.9.1-2 .1-3.1-.1s-2.1-.6-2.9-1.1c-.8-.5-1.4-1.1-1.9-1.7-.5-.6-.8-1.4-1-2.2-.2-.8-.3-1.7-.3-2.6 0-1 .2-1.9.4-3zm9.6 3.2l2.3-11.2c.5-2.5 0-4-1.6-4.3-.5-.1-.9-.1-1.3.1s-.7.4-.9.8-.4.8-.6 1.1c-.1.4-.3.8-.4 1.3l-2.3 11.2c-.5 2.5 0 4 1.5 4.3 1.8.4 2.8-.7 3.3-3.3zM123 222.7l-.2-8.9c-.2-6.2 2.3-9.4 7.4-9.6 5.1-.1 7.8 2.9 8 9.1l.2 8.7c0 1.1 0 2-.2 2.9-.1.9-.4 1.8-.7 2.6s-.8 1.5-1.4 2.1c-.6.6-1.3 1-2.2 1.4-.9.3-1.9.5-3 .6-1.1 0-2.1-.1-3-.4-.9-.3-1.6-.7-2.2-1.2-.6-.5-1.1-1.2-1.5-2-.4-.8-.7-1.6-.9-2.5s-.3-1.8-.3-2.8zm10.1.9l-.3-11.4c-.1-2.6-.9-3.9-2.5-3.8-.5 0-.9.1-1.2.4-.3.2-.6.6-.7 1l-.3 1.2c-.1.4-.1.8-.1 1.3l.3 11.4c.1 2.6.9 3.9 2.5 3.8 1.6 0 2.4-1.3 2.3-3.9zM144.6 222.5l5-2.3c.1.5.3 1 .4 1.4.1.4.3.8.5 1.3.2.4.4.8.6 1.1.2.3.5.5.8.6.3.1.6.2 1 .1 1-.3 1.4-1 1-2.3-.5-1.8-1.9-3.3-4.4-4.6l-1.9-1c-.6-.3-1.1-.5-1.5-.8s-.8-.5-1.4-.9c-.5-.4-1-.8-1.3-1.2-.3-.4-.7-.9-1-1.5s-.6-1.2-.8-2c-.5-2.1-.3-3.9.7-5.4 1-1.5 2.6-2.6 4.8-3.1 1.8-.5 3.5-.2 5.1.8s2.6 2.4 3.1 4.2v.2l.1.4-5.2 2.1c0-.1-.1-.3-.1-.5l-.1-.6-.3-1s-.3-.6-.5-.9-.4-.5-.7-.6c-.3-.1-.6-.2-.9-.1-.6.1-.9.5-1.1 1s-.2 1.1 0 1.7c.1.5.3 1 .6 1.4.3.4.6.8 1.1 1.1s.8.6 1.2.8l1.4.7 1.2.6c.9.5 1.7.9 2.3 1.3.6.4 1.3 1 1.9 1.6.6.6 1.2 1.3 1.6 2 .4.8.8 1.6 1 2.6.5 1.8.2 3.4-.8 4.9s-2.4 2.4-4.2 2.9c-1.2.3-2.3.3-3.3.1-1-.2-1.9-.6-2.7-1.2-.8-.6-1.4-1.3-1.9-2.2-.6-.8-1-1.7-1.3-2.7zM163.4 217.1l4.4-3.3c.2.5.5.9.6 1.3.2.4.4.7.7 1.1s.6.7.8.9c.3.2.6.4.9.4.3.1.6 0 1-.1.9-.5 1.1-1.3.5-2.5-.8-1.7-2.5-2.9-5.2-3.6l-2.1-.5c-.7-.2-1.2-.3-1.6-.4s-.9-.3-1.5-.6-1.1-.5-1.5-.9-.8-.7-1.3-1.2c-.4-.5-.8-1.1-1.1-1.8-.9-1.9-1.1-3.7-.4-5.5.7-1.7 2-3.1 4-4 1.7-.8 3.4-.9 5.2-.3 1.8.6 3 1.8 3.9 3.5l.1.2c.1.1.1.2.2.4l-4.6 3.1c0-.1-.1-.3-.2-.5s-.2-.4-.2-.5l-.5-.9s-.4-.5-.6-.8c-.2-.2-.5-.4-.8-.5-.3-.1-.6 0-.9.1-.5.3-.8.7-.9 1.2-.1.5 0 1.1.3 1.7.2.5.5.9.9 1.3s.8.6 1.3.9c.5.2.9.4 1.3.5s.9.2 1.5.4c.6.1 1.1.3 1.3.3l2.5.8c.7.3 1.4.7 2.2 1.1.7.5 1.4 1 2 1.7s1.1 1.4 1.5 2.3c.8 1.7.9 3.3.2 4.9-.7 1.6-1.9 2.9-3.5 3.7-1.1.5-2.2.8-3.2.8s-2-.2-2.9-.6c-.9-.4-1.6-1-2.3-1.7-.9-.6-1.5-1.4-2-2.4zM197.5 216.8v-10.9c3.3 0 6.2-.4 8.5-1.2 2.3-.8 4.2-2.3 5.7-4.5 1.5-2.3 2.6-4.4 3.5-6.3.8-2 1.4-5.2 1.8-9.8s.6-8.4.6-11.4c.1-3 .1-7.9.1-14.5 0-3.7.2-6.9.5-9.7.4-2.8 1-5.7 2.1-8.6 1-2.9 2.7-5.4 4.9-7.4s5-3.5 8.3-4.5c-3.3-1-6-2.5-8.3-4.5-2.2-2-3.8-4.5-4.9-7.4-1-2.9-1.7-5.7-2.1-8.6-.4-2.8-.5-6-.5-9.7 0-6.6 0-11.5-.1-14.5s-.3-6.8-.6-11.4c-.4-4.6-1-7.8-1.8-9.8s-2-4.1-3.5-6.3c-1.5-2.3-3.4-3.8-5.7-4.5s-5.2-1.2-8.5-1.2v-10.9c3.6 0 6.9.4 9.9 1.2 3 .8 5.5 1.7 7.7 2.9 2.2 1.1 4.1 2.8 5.8 5.1 1.7 2.3 3.1 4.3 4.2 6.3 1.1 1.9 2 4.6 2.8 8.1.8 3.4 1.4 6.4 1.7 8.8s.7 5.8.9 10.2c.2 4.4.3 7.9.3 10.5v11.4c0 5 .8 8.8 2.5 11.4 1.7 2.6 5.1 3.9 10.1 3.9v18.2c-5.1 0-8.5 1.3-10.1 3.9s-2.5 6.4-2.5 11.4v11.4c0 2.6-.1 6.2-.3 10.5-.2 4.4-.5 7.8-.9 10.2-.4 2.4-1 5.4-1.7 8.8-.8 3.4-1.7 6.1-2.8 8.1s-2.5 4-4.2 6.3-3.6 3.9-5.8 5.1c-2.2 1.1-4.8 2.1-7.7 2.9-3 .6-6.2 1-9.9 1zM48.1 215.6c-3-.8-5.5-1.7-7.7-2.9-2.2-1.1-4.1-2.8-5.8-5.1s-3.1-4.3-4.2-6.3-2-4.6-2.8-8.1c-.8-3.4-1.4-6.4-1.7-8.8-.4-2.4-.7-5.8-.9-10.2-.2-4.4-.3-7.9-.3-10.5v-11.4c0-5-.8-8.8-2.5-11.4s-5.1-3.9-10.1-3.9v-18.2c5.1 0 8.5-1.3 10.1-3.9 1.7-2.6 2.5-6.4 2.5-11.4v-11.4s.2-6.1.3-10.5.5-7.8.9-10.2 1-5.3 1.7-8.8c.8-3.4 1.7-6.1 2.8-8.1 1.1-1.9 2.5-4 4.2-6.3 1.7-2.3 3.6-3.9 5.8-5.1 2.2-1.1 4.8-2.1 7.7-2.9s6.2-1.2 9.9-1.2v10.9c-3.3 0-6.2.4-8.5 1.2-2.3.8-4.2 2.3-5.7 4.5-1.5 2.3-2.6 4.4-3.5 6.3s-1.4 5.2-1.8 9.8c-.4 4.6-.6 8.4-.6 11.4-.1 3-.1 7.9-.1 14.5 0 3.7-.2 6.9-.5 9.7-.4 2.8-1 5.7-2.1 8.6-1 2.9-2.7 5.4-4.9 7.4s-5 3.5-8.3 4.5c3.3 1 6 2.5 8.3 4.5s3.8 4.5 4.9 7.4c1 2.9 1.7 5.7 2.1 8.6.4 2.8.5 6 .5 9.7 0 6.6 0 11.5.1 14.5s.3 6.8.6 11.4 1 7.8 1.8 9.8c.8 2 2 4.1 3.5 6.3 1.5 2.3 3.4 3.8 5.7 4.5 2.3.8 5.2 1.2 8.5 1.2v10.9c-3.6.2-6.9-.2-9.9-1z"/></svg>
+ 
+ <h1>
+    <nav class="uk-navbar" uk-navbar="{'align':'left','boundary':'!.uk-navbar-container'}">
+        <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav">
+                <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="page1.html" class="nav-link">OVERKAPPING</a></li>
+                <li class="nav-item"><a href="page2.html" class="nav-link">GLAZEN SCHUIFWANDEN</a></li>
+                <li class="nav-item"><a href="page3.html" class="nav-link">KOZIJNEN</a></li>
+                <li class="nav-item"><a href="Inspiratie.html" class="nav-link">Inspiratie</a></li>
+
+            </ul>  
+            
+            <button class="uk-button uk-button-danger uk-button-small ">Offer</button>
+
+        </div>
+    </nav>
+
+    <div class="mobile">
+
+        <input type="checkbox" id="active">
+        <label for="active" class="menu-btn"><span></span></label>
+        <label for="active" class="close"></label>
+        <div class="wrapper_Mobile">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page1.html">OVERKAPPING</a></li>
+                <li><a href="page2.html">GLAZEN </a></li>
+                <li><a href="page3.html">KOZIJNEN</a></li>
+                <li><a href="Inspiratie.html">Inspiratie</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</h1>
+
+</header>
+
+
+<div class="uk-container uk-container-large uk-container-xlarge ">
+
+
+    <div class="carousel">
+        <div class="progress-bar progress-bar--primary hide-on-desktop">
+          <div class="progress-bar__fill"></div>
+        </div>
+      
+      <header class="main-post-wrapper">
+        
+        <div class="slides">
+          <article class="main-post main-post--active">
+            <div class="main-post__image">
+              <img src="https://www.egveranda.nl/wp-content/uploads/photo-gallery/69693351_2318577575022133_4506030548795260928_n.jpg?bwg=1572342286" alt="New McLaren wind tunnel 'critical' to future performance, says Tech Director Key" />
+            </div>
+            <div class="main-post__content">
+              <div class="main-post__tag-wrapper">
+                <span class="main-post__tag">New</span>
+              </div>
+              <h1 class="main-post__title">Geschikt voor elk seizoen  van het jaar</h1>
+              <a class="main-post__link" href="#">
+                    <span class="main-post__link-text">OFFERT AANVRAGEN</span>
+              </a>
+            </div>
+          </article>
+          <article class="main-post main-post--not-active">
+            <div class="main-post__image">
+              <img src="https://www.egveranda.nl/wp-content/uploads/photo-gallery/51668651_10157011095243048_7960670867514458112_o_(1).jpg?bwg=1572342286" alt="What To Watch For in the 2019 Hungarian Grand Prix" />
+            </div>
+            <div class="main-post__content">
+              <div class="main-post__tag-wrapper">
+                <span class="main-post__tag">New</span>
+              </div>
+              <h1 class="main-post__title">Geschikt voor elk seizoen  van het jaar</h1>
+              <a class="main-post__link" href="#">
+                <span class="main-post__link-text">OFFERT AANVRAGEN</span>
+              </a>
+            </div>
+          </article>
+          <article class="main-post main-post--not-active">
+            <div class="main-post__image">
+              <img src="https://www.egveranda.nl/wp-content/uploads/photo-gallery/67911067_2301997193346838_2119650821107875840_n_(1).jpg?bwg=1572342286" alt="Hamilton wants harder championship fight from Leclerc and
+                  Verstappen" />
+            </div>
+            <div class="main-post__content">
+              <div class="main-post__tag-wrapper">
+                <span class="main-post__tag">New</span>
+              </div>
+              <h1 class="main-post__title">Geschikt voor elk seizoen  van het jaar 2021
+              </h1>
+              <a class="main-post__link" href="#">
+                <span class="main-post__link-text">OFFERT AANVRAGEN</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </header>
+      
+      <div class="posts-wrapper hide-on-mobile">
+        <article id="post1" class="post post--active">
+          <div class="progress-bar">
+            <div class="progress-bar__fill"></div>
+          </div>
+          <header class="post__header">
+            <span class="post__tag">New</span>
+            <p class="post__published">16 August 2021</p>
+          </header>
+          <h2 class="post__title">Geschikt voor elk seizoen  van het jaar</h2>
+        </article>
+        <article class="post">
+          <div class="progress-bar">
+            <div class="progress-bar__fill"></div>
+          </div>
+          <header class="post__header">
+            <span class="post__tag">New</span>
+            <p class="post__published">20 jul 2021</p>
+          </header>
+          <h2 class="post__title">Geschikt voor elk seizoen  van het jaar</h2>
+        </article>
+        <article class="post">
+          <div class="progress-bar">
+            <div class="progress-bar__fill"></div>
+          </div>
+          <header class="post__header">
+            <span class="post__tag">New</span>
+            <p class="post__published">08 sep 2021</p>
+          </header>
+          <h2 class="post__title">Geschikt voor elk seizoen  van het jaar 2021
+          </h2>
+        </article>
+      </div>
+      </div>
+
+
+</div> 
+
+
+
+
+
+<div class="uk-container uk-container-medium" style="margin-top: 40px;">
+    <br>
+
+    <center>
+        <h1>Afgeronde projecten</h1>
+        <hr class="uk-divider-small" style="color:black;">
+        <h3>Vertrouw uw project toe aan EGveranda, Nederlandse bouwleiderer</h3>
+
+    </center>
+
+<div class="item-grid">
+  <div class="item">
+    <div class="item-image">
+      <img src="https://www.egveranda.nl/wp-content/uploads/photo-gallery/65076267_10157332528758048_481162076614557696_n_(1).jpg?bwg=1572342286" alt="">
+    </div>
+    <div class="item-text">
+      <div class="item-text-wrapper">
+        <p class="item-text-dek">Eindhoven</p>
+        <h4 class="item-text-title">Geschikt voor elk seizoen  van het jaar</h4>
+      </div>
+    </div>
+    <a class="item-link" href="#">Ligula Ridiculus Tortor</a>
+  </div>
+  
+  <div class="item">
+    <div class="item-image">
+      <img src="https://www.egveranda.nl/wp-content/uploads/photo-gallery/WhatsApp_Image_2019-09-24_at_09.17.52.jpeg?bwg=1572342287" alt="">
+    </div>
+    <div class="item-text">
+      <div class="item-text-wrapper">
+        <p class="item-text-dek">Amsterdam</p>
+        <h4 class="item-text-title">Geschikt voor elk seizoen  van het jaar</h4>
+      </div>
+    </div>
+    <a class="item-link" href="#">New Stripe Homepage</a>
+  </div>
+  
+  <div class="item">
+    <div class="item-image">
+      <img src="https://www.egveranda.nl/wp-content/uploads/photo-gallery/53835417_10157073528038048_5714160946004361216_o_(1).jpg?bwg=1572342286" alt="">
+    </div>
+    <div class="item-text">
+      <div class="item-text-wrapper">
+        <p class="item-text-dek">Breda</p>
+        <h4 class="item-text-title">Geschikt voor elk seizoen  van het jaar</h4>
+      </div>
+    </div>
+    <a class="item-link" href="#">NASA</a>
+  </div>
+  
+  <div class="item">
+    <div class="item-image">
+      <img src="https://www.egveranda.nl/wp-content/uploads/photo-gallery/WhatsApp_Image_2019-09-24_at_09.15.34(1).jpeg?bwg=1572342287" alt="">
+    </div>
+    <div class="item-text">
+      <div class="item-text-wrapper">
+        <p class="item-text-dek">Alkmaar</p>
+        <h4 class="item-text-title">Geschikt voor elk seizoen  van het jaar</h4>
+      </div>
+    </div>
+    <a class="item-link" href="#">Utrecht</a>
+  </div>
+  
+  <div class="item">
+    <div class="item-image">
+      <img src="https://www.egveranda.nl/wp-content/uploads/photo-gallery/67607374_2404708096408463_8507765592680300544_n_(1).jpg?bwg=1572342286" alt="">
+    </div>
+    <div class="item-text">
+      <div class="item-text-wrapper">
+        <p class="item-text-dek">Arnhem</p>
+        <h4 class="item-text-title">JGeschikt voor elk seizoen  van het jaar</h4>
+      </div>
+    </div>
+    <a class="item-link" href="#">Den Haag</a>
+  </div>
+  
+  <div class="item">
+    <div class="item-image">
+      <img src="https://www.egveranda.nl/wp-content/uploads/photo-gallery/67751805_2301997266680164_7790708987158069248_n_(1)_(1)_(1).jpg?bwg=1572342286" alt="">
+    </div>
+    <div class="item-text">
+      <div class="item-text-wrapper">
+        <p class="item-text-dek">Zaandam</p>
+        <h4 class="item-text-title">Geschikt voor elk seizoen  van het jaar</h4>
+      </div>
+    </div>
+    <a class="item-link" href="#">Skilledup : Nav</a>
+  </div>
+
+</div>
+
+
+</div>
+
+
+<div>
+    <div class="uk-padding uk-panel" style="margin-top:40px">
+
+        <div class="uk-container uk-container-large">
+
+            <div class=" uk-child-width-1-1@s uk-child-width-1-2@m uk-child-width-1-4@l uk-grid-match" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-body uk-padding-small">
+                        <a href="#">
+                            <img src="https://www.egveranda.nl/wp-content/uploads/2019/07/stap1-800x847.png" alt="">
+                        </a>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="uk-card  uk-card-body uk-padding-small">
+                        <a href="#">
+                            <img src="https://www.egveranda.nl/wp-content/uploads/2019/07/stap2-800x847.png" alt="">
+                        </a>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="uk-card  uk-card-body uk-padding-small">
+                        <a href="#">
+                            <img src="https://www.egveranda.nl/wp-content/uploads/2019/07/stap3-1-800x847.png" alt="">
+                        </a>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="uk-card  uk-card-body uk-padding-small">   
+                        <a href="#">
+                            <img src="https://www.egveranda.nl/wp-content/uploads/2019/07/stap4-1-800x847.png" alt="">
+                        </a>              
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+       
+</div>
+
+
+<div class="uk-padding uk-panel" style="margin-top:40px">
+
+    
+</div>
+
+
+<div class="uk-container uk-container-medium" style="margin-top: 40px;">
+
+
+    <div class="uk-child-width-1-4@l uk-child-width-1-2@m uk-child-width-1-2@s" uk-grid>
+
+        <div class="uk-padding-small">
+            <div class="card_2 uk-card" style="background: url('https://www.egveranda.nl/wp-content/uploads/photo-gallery/WhatsApp_Image_2019-09-24_at_09.18.02(1).jpeg?bwg=1572342287') no-repeat center/cover;">
+                <div class="fon"></div>
+                <div class="text">
+                  <h2>
+                    Veranda
+                  </h2>
+                  <p>
+                      Al onze overkappingen worden eerst opgemeten en daarna op maat voor u gemaakt.
+                  </p>
+                  <div class="triangle"></div>
+                </div>
+                <div class="btn">
+                  View
+                </div>
+              </div>
+        </div>
+
+        <div class="uk-padding-small ">
+            <div class="card_2 uk-card" style="background: url('https://i.pinimg.com/originals/74/14/04/7414042e705f638cb7d25148f7d7de70.jpg') no-repeat center/cover;">
+                <div class="fon"></div>
+                <div class="text">
+                  <h2>
+                    Carport
+                  </h2>
+                  <p>
+                      De aluminium carport van EG Veranda biedt bescherming tegen het wisselvallige klimaat van Nederland.
+                  </p>
+                  <div class="triangle"></div>
+                </div>
+                <div class="btn">
+                  View
+                </div>
+              </div>
+        </div>
+
+        <div class="uk-padding-small ">
+
+            <div class="card_2 uk-card" style="background: url('https://www.oaso.be/upload/Helios%20Master%20Victorian_2016164(1).jpg') no-repeat center/cover;">
+                <div class="fon"></div>
+                <div class="text">
+                  <h2>
+                    Serre
+                  </h2>
+                  <p>
+                      Met een aluminium serre krijg je een prachtige verbinding tussen huis en tuin.
+                  </p>
+                  <div class="triangle"></div>
+                </div>
+                <div class="btn">
+                  View
+                </div>
+              </div>
+
+        </div>
+
+        
+        <div class="uk-padding-small ">
+
+            <div class="card_2 uk-card" style="background: url('https://www.byzonbuitenzonwering.nl/wp-content/uploads/2019/01/BYZON-chique-rolluik-zwart.jpg') no-repeat center/cover;">
+                <div class="fon"></div>
+                <div class="text">
+                  <h2>
+                    Rolluik
+                  </h2>
+                  <p>
+                      De rolluiken van EG Veranda geven een combinatie van een veilig gevoel, duurzaamheid en vormgeving.
+                  </p>
+                  <div class="triangle"></div>
+                </div>
+                <div class="btn">
+                  View
+                </div>
+              </div>
+
+        </div>
+      </div>
+
+</div>
+<br>
+
+
+
+
+<div class="marquee">
+    <ul class="marquee-content">
+
+      <li><a href="#"><img src="https://www.egveranda.nl/wp-content/uploads/2018/12/skylux.png" alt=""></a></li>
+      <li><a href="#"><img src="https://www.egveranda.nl/wp-content/uploads/2018/12/makrolon.png" alt=""></a></li>
+      <li><a href="#"><img src="https://www.egveranda.nl/wp-content/uploads/2018/12/skylux.png" alt=""> </a></li>
+      <li><a href="#"><img src="https://www.egveranda.nl/wp-content/uploads/2018/12/Untitled-1.png" alt=""></a></li>
+      <li><a href="#"><img src="https://www.egveranda.nl/wp-content/uploads/2018/12/vanbeeveren.png" alt=""></a></li>
+      <li><a href="#"><img src="https://www.egveranda.nl/wp-content/uploads/2018/12/skylux.png" alt=""></a></li>
+
+    </ul>
+</div>
+
+
+
+<footer class="site-footer">
+    
+    <div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-text-center uk-padding-small" uk-grid>
+        
+        <div>
+            <div class="uk-child-width-1-3@m uk-child-width-1-1@s uk-text-center" uk-grid>
+                <div>
+                    <h6>ADRESGEGEVENS</h6>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="http://scanfcode.com/category/templates/">
+                                <i class="fa fa-address-card-o" aria-hidden="true"></i>
+                                &nbsp;EG Veranda <br>
+                                Hoppenkuil 17 5626 DD Eindhoven
+                            </a>
+                        </li>
+                        <li><a href="http://scanfcode.com/category/c-language/">
+                                 <i class="fa fa-phone" aria-hidden="true"></i>
+                                 &nbsp;040 – 262 21 50</a>
+                        </li>
+                        <li><a href="http://scanfcode.com/category/front-end-development/">
+                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                                &nbsp;06 48 36 67 84</a>
+                        </li>
+                        <li><a href="http://scanfcode.com/category/back-end-development/"></a></li>
+                        <li><a href="http://scanfcode.com/category/java-programming-language/">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                &nbsp;info@egveranda.nl</a>
+                        </li>
+                        <li><a href="http://scanfcode.com/category/android/">
+                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                            &nbsp;KvK egveranda.nl</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                    <div>
+                        
+                        <h6>INFORMATIE</h6>
+                            <ul class="footer-links">
+                            <li><a href="http://scanfcode.com/about/">Producten</a></li>
+                            <li><a href="http://scanfcode.com/contact/">Projecten</a></li>
+                            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Maatwerk</a></li>
+                            <li><a href="http://scanfcode.com/privacy-policy/">Contact</a></li>
+                            <li><a href="http://scanfcode.com/sitemap/">Offerte</a></li>
+                            <li><a href="http://scanfcode.com/sitemap/">Dealers</a></li>
+                            </ul>
+
+                    </div>
+
+                    <div>
+                        
+                        <h6>PRODUCTEN</h6>
+                            <ul class="footer-links">
+                            <li><a href="http://scanfcode.com/about/">Veranda</a></li>
+                            <li><a href="http://scanfcode.com/contact/">Glazenschuifwanden</a></li>
+                            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Kozijnen</a></li>
+                            <li><a href="http://scanfcode.com/privacy-policy/">Carport</a></li>
+                            <li><a href="http://scanfcode.com/sitemap/">Serre</a></li>
+                            <li><a href="http://scanfcode.com/sitemap/">Rolluiken</a></li>
+                            </ul>
+
+                    </div>
+
+                    
+
+            </div>
+            
+        </div>
+
+        <div>
+            <h6><a href="index.html"><img src="http://www.egveranda.nl/wp-content/uploads/2019/06/egverandalogo-blauw.png" alt=""></a></h6>
+            <p class="text-justify">
+                Met een veranda haalt u het comfort van binnen naar buiten! Een terrasoverkapping is een verlenging van uw woonomgeving en biedt tevens beschutting tegen regen en/of zon.
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="uk-container">
+        <div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-text-center uk-padding-small" uk-grid>
+
+            <div>
+                <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+                    <a href="#">Scanfcode</a>.
+                </p>
+             </div>
+   
+             <div>
+               <ul class="social-icons">
+                 <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                 <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                 <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                 <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+               </ul>
+            </div>
+        </div>
+</footer>
+
+<script src="f.js"></script>
+<script src="carousel.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+</body>
+</html>
